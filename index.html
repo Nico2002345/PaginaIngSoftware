@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Portafolio | Ingeniería de Software</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <style>
+    :root{ --bg:#0f1115; --muted:#9aa0a6; --text:#e5e7eb; --accent:#c7cad1; --accent-strong:#d9dbe1; --shadow:0 10px 25px rgba(0,0,0,.35); --radius:20px; }
+    *{box-sizing:border-box}
+    body{
+      margin:0; font-family:'Montserrat',sans-serif; color:var(--text);
+      background:
+        linear-gradient(var(--bg), var(--bg)),
+        repeating-linear-gradient(0deg, transparent, transparent 38px, rgba(255,255,255,0.04) 39px, transparent 40px),
+        repeating-linear-gradient(90deg, transparent, transparent 38px, rgba(255,255,255,0.04) 39px, transparent 40px);
+      background-attachment: fixed;
+    }
+    header{display:flex;align-items:center;gap:16px;padding:22px;border-bottom:1px solid rgba(255,255,255,.06)}
+    .brand img{width:48px;height:48px;border-radius:50%;border:2px solid rgba(255,255,255,.2);box-shadow:var(--shadow);background:#222}
+    .brand h1{margin:0;font-size:22px;font-weight:800}
+    .brand small{display:block;color:var(--muted)}
+    nav{margin-left:auto;display:flex;gap:8px}
+    .tab-btn{background:#1b2130;border:1px solid rgba(255,255,255,.08);color:var(--text);padding:10px 14px;border-radius:12px;cursor:pointer;font-weight:600}
+    .tab-btn.active{background:#2a3143}
+    main{padding:28px}
+    .card{background:#121621;border:1px solid rgba(255,255,255,.08);border-radius:var(--radius);box-shadow:var(--shadow);padding:20px;margin-bottom:20px}
+    .avatar{text-align:center}
+    .avatar img{width:180px;height:180px;border-radius:50%;border:3px solid rgba(255,255,255,.18);box-shadow:var(--shadow);object-fit:cover}
+    .tag{display:inline-block;padding:6px 10px;background:#1a2030;border:1px solid rgba(255,255,255,.08);border-radius:999px;font-size:12px}
+    .hidden{display:none}
+    .controls{display:flex;gap:12px;flex-wrap:wrap;margin:10px 0}
+    .controls select,.controls input,.controls button{background:#0f1320;border:1px solid rgba(255,255,255,.12);color:var(--text);padding:10px 12px;border-radius:10px}
+    details{background:#0f1320;border:1px solid rgba(255,255,255,.08);border-radius:14px;margin:10px 0;overflow:hidden}
+    details>summary{cursor:pointer;padding:12px 16px;font-weight:700;list-style:none}
+    details[open]>summary{background:#151b2a}
+    .group-body{padding:0 16px 12px 16px}
+    table{width:100%;border-collapse:collapse}
+    th,td{padding:10px;border-bottom:1px solid rgba(255,255,255,.06);text-align:left}
+    th{color:var(--accent-strong)}
+    tr:hover{background:#141a27}
+    .preview{min-height:300px;background:#0c1018;border-radius:12px;border:1px solid rgba(255,255,255,.06);display:grid;place-items:center;margin-top:12px;overflow:hidden}
+    .btn{background:#2a3143;color:var(--text);padding:12px;border:none;border-radius:12px;cursor:pointer}
+    footer{text-align:center;padding:20px;color:var(--muted)}
+    .error{color:#f88}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="brand">
+      <img src="assets/logo.jpg" alt="Logo del sitio">
+    </div>
+    <div>
+      <h1>INGENIERÍA DE SOFTWARE</h1>
+      <small>Soluciones inteligentes, resultados reales</small>
+    </div>
+    <nav aria-label="Secciones">
+      <button class="tab-btn active" data-tab="quien">Quién soy</button>
+      <button class="tab-btn" data-tab="avance">Avance</button>
+      <button class="tab-btn" data-tab="contacto">Contácteme</button>
+    </nav>
+  </header>
+
+  <main>
+    <!-- QUIÉN SOY -->
+    <section id="quien" aria-labelledby="titulo-quien">
+      <div class="card avatar">
+        <img id="fotoPerfil" src="assets/perfil.jpg" alt="Foto de perfil"
+             onerror="(function(el){el.onerror=null; el.src='assets/logo.jpg';})(this)">
+        <h2 id="titulo-quien">Nicolás Calvo</h2>
+        <p>Ingeniero en Sistemas</p>
+        <span class="tag">Universidad Piloto de Colombia</span>
+      </div>
+    </section>
+
+    <!-- AVANCE (desplegables por fecha, lee assets/docs/docs.json) -->
+    <section id="avance" class="hidden" aria-labelledby="titulo-avance">
+      <div class="card">
+        <h2 id="titulo-avance">Avance · Documentos publicados</h2>
+
+        <div class="controls">
+          <label>Orden:
+            <select id="sort">
+              <option value="desc" selected>Más recientes primero</option>
+              <option value="asc">Más antiguos primero</option>
+            </select>
+          </label>
+          <label>Desde <input type="date" id="from"></label>
+          <label>Hasta <input type="date" id="to"></label>
+          <button id="apply" class="btn" type="button">Aplicar</button>
+          <button id="clear" class="btn" type="button">Limpiar</button>
+        </div>
+
+        <div id="groups" aria-live="polite"></div>
+
+        <div class="preview" id="preview"><span style="color:#9aa0a6">Selecciona un archivo para previsualizarlo</span></div>
+
+        <p style="color:#9aa0a6;margin-top:12px">
+          Los documentos se listan desde <code>assets/docs/docs.json</code>. Actualiza ese archivo cuando agregues contenido.
+        </p>
+      </div>
+    </section>
+
+    <!-- CONTACTO -->
+    <section id="contacto" class="hidden" aria-labelledby="titulo-contacto">
+      <div class="card">
+        <h2 id="titulo-contacto">Contácteme</h2>
+        <p><strong>Correo electrónico:</strong> contacto.portafolio@example.com</p>
+        <p><strong>Teléfono:</strong> +57 310 000 0000</p>
+        <p><strong>Ubicación:</strong> Bogotá D.C., Colombia</p>
+        <hr style="margin:16px 0; border: none; border-top: 1px solid rgba(255,255,255,.1)">
+        <p style="color:#9aa0a6; font-size:14px">
+          Esta es información de contacto ficticia. Sustitúyela por tus datos reales en el archivo <code>index.html</code> cuando quieras.
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer>© <span id="year"></span> Nicolás Calvo · Ingeniería de Software</footer>
+
+  <script>
+    // ---------- Utilidades ----------
+    const safeURL = u => encodeURI(u); // codifica espacios/acentos conservando slashes
+    const showErrorHtml = (target, msg) => {
+      target.innerHTML = `<p class="error">${msg}</p>`;
+      console.error(msg);
+    };
+
+    // ---------- TABS ----------
+    const tabs = document.querySelectorAll('.tab-btn');
+    const sections = { quien: document.getElementById('quien'), avance: document.getElementById('avance'), contacto: document.getElementById('contacto') };
+    tabs.forEach(btn => btn.addEventListener('click', () => {
+      tabs.forEach(b=>b.classList.remove('active'));
+      btn.classList.add('active');
+      Object.values(sections).forEach(s => s.classList.add('hidden'));
+      sections[btn.dataset.tab].classList.remove('hidden');
+    }));
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // ---------- AVANCE ----------
+    const groupsEl = document.getElementById('groups');
+    const sortSel  = document.getElementById('sort');
+    const fromEl   = document.getElementById('from');
+    const toEl     = document.getElementById('to');
+    const applyBtn = document.getElementById('apply');
+    const clearBtn = document.getElementById('clear');
+    const preview  = document.getElementById('preview');
+
+    let DOCS = []; // se llena desde docs.json
+
+    const parseDate = s => new Date(s + (s && s.length===10 ? "T00:00:00" : ""));
+    const fmtDate   = s => new Date(s).toLocaleDateString(undefined, {year:'numeric', month:'short', day:'2-digit'});
+
+    function groupByYearMonth(items){
+      const map = {};
+      for(const d of items){
+        const dt = new Date(d.date);
+        if(isNaN(dt)) continue;
+        const ym = dt.getFullYear() + "-" + String(dt.getMonth()+1).padStart(2,'0');
+        (map[ym] ||= []).push(d);
+      }
+      return map;
+    }
+
+    function ymLabel(ym){
+      const [y,m] = ym.split("-").map(Number);
+      const dt = new Date(y, m-1, 1);
+      return dt.toLocaleDateString(undefined, { year:'numeric', month:'long' });
+    }
+
+    function render(){
+      const order = sortSel.value;
+      const f = fromEl.value ? parseDate(fromEl.value).getTime() : -Infinity;
+      const t = toEl.value   ? (parseDate(toEl.value).getTime() + 24*60*60*1000 - 1) : Infinity;
+
+      const filtered = DOCS
+        .filter(d => {
+          const ts = new Date(d.date).getTime();
+          return !isNaN(ts) && ts >= f && ts <= t;
+        })
+        .sort((a,b)=> order==='desc' ? (new Date(b.date)-new Date(a.date)) : (new Date(a.date)-new Date(b.date)));
+
+      const grouped = groupByYearMonth(filtered);
+      const keys = Object.keys(grouped).sort((a,b)=> order==='desc' ? (a<b?1:-1) : (a<b?-1:1));
+
+      if(keys.length === 0){
+        groupsEl.innerHTML = `<p style="color:#9aa0a6">No hay documentos para mostrar con el filtro actual.</p>`;
+        return;
+      }
+
+      groupsEl.innerHTML = keys.map(ym => {
+        const rows = grouped[ym]
+          .map(d => {
+            const urlSafe = safeURL(d.url);
+            return `
+              <tr data-url="${urlSafe}" data-type="${d.type || ''}">
+                <td>${d.name}</td>
+                <td>${d.type || "—"}</td>
+                <td>${fmtDate(d.date)}</td>
+                <td><a href="${urlSafe}" target="_blank" rel="noopener">Abrir</a></td>
+              </tr>
+            `;
+          }).join('');
+
+        return `
+          <details ${keys[0]===ym ? 'open':''}>
+            <summary>${ymLabel(ym)}</summary>
+            <div class="group-body">
+              <table>
+                <thead><tr><th>Nombre</th><th>Tipo</th><th>Fecha</th><th>Abrir</th></tr></thead>
+                <tbody>${rows}</tbody>
+              </table>
+            </div>
+          </details>
+        `;
+      }).join('');
+
+      groupsEl.querySelectorAll('tr[data-url]').forEach(tr => {
+        tr.addEventListener('click', async (ev) => {
+          // Evita que el click en <a> haga dos acciones
+          if(ev.target.tagName.toLowerCase() === 'a') return;
+          const url = tr.getAttribute('data-url');
+          const type = tr.getAttribute('data-type') || "";
+
+          // HEAD para detectar 404
+          try{
+            const head = await fetch(url, { method:'HEAD' });
+            if(!head.ok){
+              preview.innerHTML = `<span class="error">No encontrado (HTTP ${head.status})<br><small>${url}</small></span>`;
+              return;
+            }
+          }catch(e){
+            // si HEAD falla por política del server, seguimos a previsualizar igual
+          }
+          showPreview(url, type);
+        });
+      });
+    }
+
+    async function showPreview(url, mime){
+      if(!url) return;
+      preview.innerHTML = "";
+      const urlSafe = safeURL(url);
+
+      if(mime && mime.startsWith("image/")){
+        const img = document.createElement('img');
+        img.src = urlSafe; img.style.maxWidth="100%"; img.style.height="auto";
+        preview.appendChild(img); return;
+      }
+      if(mime === "application/pdf"){
+        const iframe = document.createElement('iframe');
+        iframe.src = urlSafe; iframe.style.width="100%"; iframe.style.height="100%";
+        preview.appendChild(iframe); return;
+      }
+      if(mime && (mime.startsWith("text/") || mime==="text/markdown")){
+        try{
+          const res = await fetch(urlSafe);
+          if(!res.ok) throw new Error('HTTP '+res.status);
+          const txt = await res.text();
+          const pre = document.createElement('pre');
+          pre.textContent = txt; pre.style.padding="16px"; pre.style.whiteSpace="pre-wrap";
+          preview.appendChild(pre);
+        }catch{
+          preview.innerHTML = `<span class="error">No se pudo cargar el texto.<br><small>${urlSafe}</small></span>`;
+        }
+        return;
+      }
+      preview.innerHTML = '<span style="color:#9aa0a6">Vista previa no disponible. Usa “Abrir”.</span>';
+    }
+
+    applyBtn.addEventListener('click', render);
+    clearBtn.addEventListener('click', ()=>{ fromEl.value=''; toEl.value=''; sortSel.value='desc'; render(); });
+
+    // Carga del manifest (docs.json) con cache-busting y errores claros
+    fetch('assets/docs/docs.json?v=' + Date.now())
+      .then(r => {
+        if(!r.ok) throw new Error(`HTTP ${r.status} al leer assets/docs/docs.json`);
+        return r.json();
+      })
+      .then(data => {
+        if(!Array.isArray(data)){
+          showErrorHtml(groupsEl, 'El manifest no es un array. Revisa el formato JSON.');
+          return;
+        }
+        DOCS = data;
+        render();
+      })
+      .catch(err => {
+        showErrorHtml(groupsEl, 'No se pudo cargar <code>assets/docs/docs.json</code>. ' + err.message);
+      });
+  </script>
+</body>
+</html>
