@@ -19,7 +19,7 @@
       background-attachment: fixed;
     }
     header{display:flex;align-items:center;gap:16px;padding:22px;border-bottom:1px solid rgba(255,255,255,.06)}
-    .brand img{width:48px;height:48px;border-radius:50%;border:2px solid rgba(255,255,255,.2);box-shadow:var(--shadow);background:#222}
+    .brand img{width:48px;height:48px;border-radius:50%;border:2px solid rgba(255,255,255,.2);box-shadow:var(--shadow);background:#222;object-fit:cover}
     .brand h1{margin:0;font-size:22px;font-weight:800}
     .brand small{display:block;color:var(--muted)}
     nav{margin-left:auto;display:flex;gap:8px}
@@ -31,8 +31,9 @@
     .avatar img{width:180px;height:180px;border-radius:50%;border:3px solid rgba(255,255,255,.18);box-shadow:var(--shadow);object-fit:cover}
     .tag{display:inline-block;padding:6px 10px;background:#1a2030;border:1px solid rgba(255,255,255,.08);border-radius:999px;font-size:12px}
     .hidden{display:none}
-    .controls{display:flex;gap:12px;flex-wrap:wrap;margin:10px 0}
+    .controls{display:flex;gap:12px;flex-wrap:wrap;margin:10px 0;align-items:center}
     .controls select,.controls input,.controls button{background:#0f1320;border:1px solid rgba(255,255,255,.12);color:var(--text);padding:10px 12px;border-radius:10px}
+    .controls input[type="search"]{min-width:260px}
     details{background:#0f1320;border:1px solid rgba(255,255,255,.08);border-radius:14px;margin:10px 0;overflow:hidden}
     details>summary{cursor:pointer;padding:12px 16px;font-weight:700;list-style:none}
     details[open]>summary{background:#151b2a}
@@ -44,13 +45,13 @@
     .preview{min-height:300px;background:#0c1018;border-radius:12px;border:1px solid rgba(255,255,255,.06);display:grid;place-items:center;margin-top:12px;overflow:hidden}
     .btn{background:#2a3143;color:var(--text);padding:12px;border:none;border-radius:12px;cursor:pointer}
     footer{text-align:center;padding:20px;color:var(--muted)}
-    .error{color:#f88}
+    .error{color:#f88;margin:8px 0}
   </style>
 </head>
 <body>
   <header>
     <div class="brand">
-      <img src="assets/logo.jpg" alt="Logo del sitio">
+      <img id="logoImg" alt="Logo del sitio">
     </div>
     <div>
       <h1>INGENIERÍA DE SOFTWARE</h1>
@@ -67,38 +68,45 @@
     <!-- QUIÉN SOY -->
     <section id="quien" aria-labelledby="titulo-quien">
       <div class="card avatar">
-        <img id="fotoPerfil" src="assets/perfil.jpg" alt="Foto de perfil"
-             onerror="(function(el){el.onerror=null; el.src='assets/logo.jpg';})(this)">
+        <img id="fotoPerfil" alt="Foto de perfil">
         <h2 id="titulo-quien">Nicolás Calvo</h2>
         <p>Ingeniero en Sistemas</p>
         <span class="tag">Universidad Piloto de Colombia</span>
       </div>
     </section>
 
-    <!-- AVANCE (desplegables por fecha, lee assets/docs/docs.json) -->
+    <!-- AVANCE -->
     <section id="avance" class="hidden" aria-labelledby="titulo-avance">
       <div class="card">
         <h2 id="titulo-avance">Avance · Documentos publicados</h2>
 
-        <div class="controls">
+        <div class="controls" role="group" aria-label="Controles de filtrado y orden">
+          <input id="q" type="search" placeholder="Buscar por nombre…" aria-label="Buscar por nombre">
+          <label>Rango:
+            <select id="range" aria-label="Rango de fechas">
+              <option value="all" selected>Todos</option>
+              <option value="today">Hoy</option>
+              <option value="7d">Últimos 7 días</option>
+              <option value="month">Este mes</option>
+              <option value="year">Este año</option>
+            </select>
+          </label>
           <label>Orden:
-            <select id="sort">
+            <select id="sort" aria-label="Orden">
               <option value="desc" selected>Más recientes primero</option>
               <option value="asc">Más antiguos primero</option>
             </select>
           </label>
-          <label>Desde <input type="date" id="from"></label>
-          <label>Hasta <input type="date" id="to"></label>
-          <button id="apply" class="btn" type="button">Aplicar</button>
           <button id="clear" class="btn" type="button">Limpiar</button>
         </div>
 
-        <div id="groups" aria-live="polite"></div>
+        <div id="doc-error" class="error"></div>
 
+        <div id="groups" aria-live="polite"></div>
         <div class="preview" id="preview"><span style="color:#9aa0a6">Selecciona un archivo para previsualizarlo</span></div>
 
         <p style="color:#9aa0a6;margin-top:12px">
-          Los documentos se listan desde <code>assets/docs/docs.json</code>. Actualiza ese archivo cuando agregues contenido.
+          Los documentos se listan desde <code>assets/docs/docs.json</code>.
         </p>
       </div>
     </section>
@@ -121,14 +129,39 @@
   <footer>© <span id="year"></span> Nicolás Calvo · Ingeniería de Software</footer>
 
   <script>
-    // ---------- Utilidades ----------
-    const safeURL = u => encodeURI(u); // codifica espacios/acentos conservando slashes
-    const showErrorHtml = (target, msg) => {
-      target.innerHTML = `<p class="error">${msg}</p>`;
-      console.error(msg);
-    };
+    // ---------------- Utilidades ----------------
+    const errBox = document.getElementById('doc-error');
+    const log = (...a)=>console.log('[portfolio]',...a);
 
-    // ---------- TABS ----------
+    // Intenta varias rutas/capitalizaciones para imágenes
+    async function loadImgWithFallback(imgEl, candidates){
+      for(const src of candidates){
+        try{
+          const r = await fetch(src, { method:'HEAD', cache:'no-store' });
+          if(r.ok){ imgEl.src = src; return; }
+        }catch{}
+      }
+      imgEl.alt += ' (no encontrada)';
+    }
+
+    // Sanea URLs (quita espacios antes de extensión) + codifica acentos/espacios
+    const safeURL = (u='') => encodeURI(u.replace(/\s+\.(docx|xlsx|pptx|pdf|doc|xls|ppt|csv|txt|md|jpg|jpeg|png)$/i, '.$1'));
+
+    // Normaliza para búsqueda (sin acentos y en minúsculas)
+    const norm = (s='') => s.normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase();
+
+    // Etiqueta legible para tipos conocidos
+    function typeLabel(m=''){
+      if(!m) return '—';
+      if(m.includes('wordprocessingml')) return 'Word (.docx)';
+      if(m.includes('spreadsheetml'))   return 'Excel (.xlsx)';
+      if(m.includes('presentationml'))  return 'PowerPoint (.pptx)';
+      if(m.startsWith('image/'))        return 'Imagen';
+      if(m === 'application/pdf')       return 'PDF';
+      return m;
+    }
+
+    // ---------------- Tabs ----------------
     const tabs = document.querySelectorAll('.tab-btn');
     const sections = { quien: document.getElementById('quien'), avance: document.getElementById('avance'), contacto: document.getElementById('contacto') };
     tabs.forEach(btn => btn.addEventListener('click', () => {
@@ -139,19 +172,23 @@
     }));
     document.getElementById('year').textContent = new Date().getFullYear();
 
-    // ---------- AVANCE ----------
+    // Carga imágenes con posibles rutas
+    loadImgWithFallback(document.getElementById('logoImg'),
+      ['Logo.jpg','assets/logo.jpg','assets/Logo.jpg','logo.jpg','assets/logo.jpeg','logo.jpeg']);
+    loadImgWithFallback(document.getElementById('fotoPerfil'),
+      ['perfil.jpg','assets/perfil.jpg','assets/Perfil.jpg','Perfil.jpg','assets/perfil.jpeg','perfil.jpeg','Logo.jpg','assets/logo.jpg']);
+
+    // ---------------- Avance / Explorador ----------------
     const groupsEl = document.getElementById('groups');
     const sortSel  = document.getElementById('sort');
-    const fromEl   = document.getElementById('from');
-    const toEl     = document.getElementById('to');
-    const applyBtn = document.getElementById('apply');
+    const rangeSel = document.getElementById('range');
+    const qEl      = document.getElementById('q');
     const clearBtn = document.getElementById('clear');
     const preview  = document.getElementById('preview');
 
-    let DOCS = []; // se llena desde docs.json
+    let DOCS = []; // {name,url,type,date,_nameN}
 
-    const parseDate = s => new Date(s + (s && s.length===10 ? "T00:00:00" : ""));
-    const fmtDate   = s => new Date(s).toLocaleDateString(undefined, {year:'numeric', month:'short', day:'2-digit'});
+    const fmtDate = s => new Date(s).toLocaleDateString(undefined, {year:'numeric', month:'short', day:'2-digit'});
 
     function groupByYearMonth(items){
       const map = {};
@@ -163,24 +200,54 @@
       }
       return map;
     }
-
     function ymLabel(ym){
       const [y,m] = ym.split("-").map(Number);
       const dt = new Date(y, m-1, 1);
       return dt.toLocaleDateString(undefined, { year:'numeric', month:'long' });
     }
 
+    function getQuickRange(){
+      const now = new Date();
+      const today0 = new Date(now.getFullYear(), now.getMonth(), now.getDate());
+      const endOfDay = d => new Date(d.getFullYear(), d.getMonth(), d.getDate(), 23,59,59,999).getTime();
+
+      switch(rangeSel.value){
+        case 'today': {
+          const f = today0.getTime(); return { f, t: endOfDay(today0) };
+        }
+        case '7d': {
+          const from = new Date(today0); from.setDate(from.getDate()-6);
+          return { f: from.getTime(), t: endOfDay(today0) };
+        }
+        case 'month': {
+          const first = new Date(now.getFullYear(), now.getMonth(), 1);
+          const last  = new Date(now.getFullYear(), now.getMonth()+1, 0);
+          return { f: first.getTime(), t: endOfDay(last) };
+        }
+        case 'year': {
+          const first = new Date(now.getFullYear(), 0, 1);
+          const last  = new Date(now.getFullYear(), 11, 31);
+          return { f: first.getTime(), t: endOfDay(last) };
+        }
+        default: return { f: -Infinity, t: Infinity };
+      }
+    }
+
     function render(){
       const order = sortSel.value;
-      const f = fromEl.value ? parseDate(fromEl.value).getTime() : -Infinity;
-      const t = toEl.value   ? (parseDate(toEl.value).getTime() + 24*60*60*1000 - 1) : Infinity;
+      const query = norm(qEl.value.trim());
+      const { f, t } = getQuickRange();
 
       const filtered = DOCS
         .filter(d => {
           const ts = new Date(d.date).getTime();
-          return !isNaN(ts) && ts >= f && ts <= t;
+          if(isNaN(ts) || ts < f || ts > t) return false;
+          if(query && !d._nameN.includes(query)) return false;
+          return true;
         })
-        .sort((a,b)=> order==='desc' ? (new Date(b.date)-new Date(a.date)) : (new Date(a.date)-new Date(b.date)));
+        .sort((a,b)=> order==='desc'
+          ? (new Date(b.date)-new Date(a.date))
+          : (new Date(a.date)-new Date(b.date)));
 
       const grouped = groupByYearMonth(filtered);
       const keys = Object.keys(grouped).sort((a,b)=> order==='desc' ? (a<b?1:-1) : (a<b?-1:1));
@@ -191,19 +258,17 @@
       }
 
       groupsEl.innerHTML = keys.map(ym => {
-        const rows = grouped[ym]
-          .map(d => {
-            const urlSafe = safeURL(d.url);
-            return `
-              <tr data-url="${urlSafe}" data-type="${d.type || ''}">
-                <td>${d.name}</td>
-                <td>${d.type || "—"}</td>
-                <td>${fmtDate(d.date)}</td>
-                <td><a href="${urlSafe}" target="_blank" rel="noopener">Abrir</a></td>
-              </tr>
-            `;
-          }).join('');
-
+        const rows = grouped[ym].map(d => {
+          const urlSafe = safeURL(d.url || '');
+          return `
+            <tr data-url="${urlSafe}" data-type="${d.type || ''}">
+              <td>${d.name || '—'}</td>
+              <td>${typeLabel(d.type || '')}</td>
+              <td>${fmtDate(d.date)}</td>
+              <td><a href="${urlSafe}" target="_blank" rel="noopener">Abrir</a></td>
+            </tr>
+          `;
+        }).join('');
         return `
           <details ${keys[0]===ym ? 'open':''}>
             <summary>${ymLabel(ym)}</summary>
@@ -219,21 +284,16 @@
 
       groupsEl.querySelectorAll('tr[data-url]').forEach(tr => {
         tr.addEventListener('click', async (ev) => {
-          // Evita que el click en <a> haga dos acciones
-          if(ev.target.tagName.toLowerCase() === 'a') return;
+          if(ev.target.tagName.toLowerCase() === 'a') return; // no duplicar acción
           const url = tr.getAttribute('data-url');
           const type = tr.getAttribute('data-type') || "";
-
-          // HEAD para detectar 404
           try{
             const head = await fetch(url, { method:'HEAD' });
             if(!head.ok){
               preview.innerHTML = `<span class="error">No encontrado (HTTP ${head.status})<br><small>${url}</small></span>`;
               return;
             }
-          }catch(e){
-            // si HEAD falla por política del server, seguimos a previsualizar igual
-          }
+          }catch{}
           showPreview(url, type);
         });
       });
@@ -267,29 +327,41 @@
         }
         return;
       }
-      preview.innerHTML = '<span style="color:#9aa0a6">Vista previa no disponible. Usa “Abrir”.</span>';
+      preview.innerHTML = '<span style="color:#9aa0a6">Vista previa no disponible para este tipo. Usa “Abrir”.</span>';
     }
 
-    applyBtn.addEventListener('click', render);
-    clearBtn.addEventListener('click', ()=>{ fromEl.value=''; toEl.value=''; sortSel.value='desc'; render(); });
+    // Eventos UI
+    rangeSel.addEventListener('change', render);
+    qEl.addEventListener('input', render);
+    sortSel.addEventListener('change', render);
+    clearBtn.addEventListener('click', ()=>{
+      qEl.value=''; rangeSel.value='all'; sortSel.value='desc'; render();
+    });
 
-    // Carga del manifest (docs.json) con cache-busting y errores claros
-    fetch('assets/docs/docs.json?v=' + Date.now())
-      .then(r => {
-        if(!r.ok) throw new Error(`HTTP ${r.status} al leer assets/docs/docs.json`);
-        return r.json();
-      })
-      .then(data => {
-        if(!Array.isArray(data)){
-          showErrorHtml(groupsEl, 'El manifest no es un array. Revisa el formato JSON.');
-          return;
-        }
-        DOCS = data;
+    // ---- Carga de docs.json (con errores claros, sin filas ficticias) ----
+    async function loadDocs() {
+      const url = new URL('assets/docs/docs.json', location.href).toString();
+      try {
+        const res = await fetch(url + '?v=' + Date.now(), { cache: 'no-store' });
+        if (!res.ok) throw new Error(`HTTP ${res.status} al leer ${url}`);
+        const data = await res.json();
+        if (!Array.isArray(data)) throw new Error('El manifest no es un array. Debe ser [ {...}, {...} ].');
+        // Precalcular nombre normalizado para búsquedas rápidas
+        DOCS = data.map(d => ({ ...d, _nameN: norm(d.name || '') }));
+        errBox.textContent = '';
         render();
-      })
-      .catch(err => {
-        showErrorHtml(groupsEl, 'No se pudo cargar <code>assets/docs/docs.json</code>. ' + err.message);
-      });
+      } catch (err) {
+        errBox.innerHTML =
+          'No se pudo cargar <code>assets/docs/docs.json</code> → ' + err.message +
+          '<br><small>Abre <a href="assets/docs/docs.json" target="_blank">assets/docs/docs.json</a> directo para verificar. ' +
+          'Asegúrate de servir por HTTP (Live Server/GitHub Pages), no <code>file://</code>, y revisa mayúsculas/acentos en rutas.</small>';
+        groupsEl.innerHTML = ''; // evita confusiones con filas de ejemplo
+        log('Fallo al cargar docs.json:', err);
+      }
+    }
+
+    // Inicializar
+    loadDocs();
   </script>
 </body>
 </html>
