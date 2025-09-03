@@ -178,5 +178,29 @@
     "url": "assets/docs/Bitacora_Tiempo_Nicolas.docx",
     "type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
     "date": "2025-08-26"
+  },
+  {
+    "name": "Diagrama uso de caso",
+    "url": "assets/docs/Diagrama_uso_de_Caso.docx",
+    "type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+    "date": "2025-08-26"
+  },
+  {
+    "name": "Diagrama de caso de Uso 4",
+    "url": "assets/docs/DiagramaCasoUso_4_LD.docx",
+    "type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+    "date": "2025-08-26"
+  },
+  {
+    "name": "Diagrama de caso de Uso 5",
+    "url": "assets/docs/DiagramaCasoUso_5_LD.docx",
+    "type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+    "date": "2025-08-26"
+  },
+  {
+    "name": "Diagrama de caso de Uso 6",
+    "url": "assets/docs/DiagramaCasoUso_6_LD.docx",
+    "type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+    "date": "2025-08-26"
   }
 ]
