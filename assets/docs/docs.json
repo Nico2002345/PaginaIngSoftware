@@ -202,5 +202,47 @@
     "url": "assets/docs/DetalleCasoUso_6_LD.docx",
     "type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
     "date": "2025-09-02"
+  },
+  {
+    "name": "Requirimientos atributos de calidad 4",
+    "url": "assets/docs/Requirimientos_atributos_de_calidad_4_LD.docx",
+    "type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+    "date": "2025-09-03"
+  },
+  {
+    "name": "Requirimientos atributos de calidad 5",
+    "url": "assets/docs/Requirimientos_atributos_de_calidad_5_LD.docx",
+    "type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+    "date": "2025-09-03"
+  },
+  {
+    "name": "Requirimientos atributos de calidad 6",
+    "url": "assets/docs/Requirimientos_atributos_de_calidad_6_LD.docx",
+    "type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+    "date": "2025-09-03"
+  },
+  {
+    "name": "Escenario de Calidad 4",
+    "url": "assets/docs/EscenarioCalidad_4_LD.docx",
+    "type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+    "date": "2025-09-03"
+  },
+  {
+    "name": "Escenario de Calidad 5",
+    "url": "assets/docs/EscenarioCalidad_5_LD.docx",
+    "type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+    "date": "2025-09-03"
+  },
+  {
+    "name": "Escenario de Calidad 6",
+    "url": "assets/docs/EscenarioCalidad_6_LD.docx",
+    "type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+    "date": "2025-09-03"
+  },
+  {
+    "name": "Script Planeación",
+    "url": "assets/docs/Script_Planeación.docx",
+    "type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+    "date": "2025-09-03"
   }
 ]
