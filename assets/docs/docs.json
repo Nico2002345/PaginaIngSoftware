@@ -45,7 +45,7 @@
     "name": "Control de Asignaciones de Grupo",
     "url": "assets/docs/ControlAsignaciones_Grupo.xlsx",
     "type": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
-    "date": "2025-08-10"
+    "date": "2025-09-10"
   },
   {
     "name": "Log de Defectos",
@@ -75,7 +75,7 @@
     "name": "Bitacora Tiempo de Desarrollo",
     "url": "assets/docs/BitacoraTiempo_Desarrollo.xlsx",
     "type": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
-    "date": "2025-08-26"
+    "date": "2025-09-10"
   },
   {
     "name": "Plantilla Administracion de configuración",
@@ -177,7 +177,7 @@
     "name": "Bitacora Tiempo Nicolas",
     "url": "assets/docs/Bitacora_Tiempo_Nicolas.docx",
     "type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
-    "date": "2025-08-26"
+    "date": "2025-09-10"
   },
   {
     "name": "Diagrama uso de caso",
@@ -243,6 +243,24 @@
     "name": "Script Planeación",
     "url": "assets/docs/Script_Planeación.docx",
     "type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
-    "date": "2025-09-03"
+    "date": "2025-09-10"
+  },
+  {
+    "name": "Documento Final",
+    "url": "assets/docs/Documento_Final_4.pptx",
+    "type": "application/vnd.openxmlformats-officedocument.presentationml.presentation",
+    "date": "2025-08-10"
+  },
+  {
+    "name": "Especificacion Detallada de Tareas",
+    "url": "assets/docs/Especificacion_Detallada_Tareas.docx",
+    "type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+    "date": "2025-09-10"
+  },
+  {
+    "name": "Plan de Calidad",
+    "url": "assets/docs/Plan_de_Calidad.docx",
+    "type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+    "date": "2025-09-10"
   }
 ]
