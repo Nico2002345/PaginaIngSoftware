@@ -45,13 +45,13 @@
     "name": "Control de Asignaciones de Grupo",
     "url": "assets/docs/ControlAsignaciones_Grupo.xlsx",
     "type": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
-    "date": "2025-09-10"
+    "date": "2025-09-24"
   },
   {
     "name": "Log de Defectos",
-    "url": "assets/docs/log_Defectos.docx",
+    "url": "assets/docs/logDefectos.pdf",
     "type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
-    "date": "2025-08-10"
+    "date": "2025-09-24"
   },
   {
     "name": "Documento Final",
@@ -60,10 +60,28 @@
     "date": "2025-08-10"
   },
   {
+    "name": "Documento Final 2",
+    "url": "assets/docs/Documento_Final_2.pptx",
+    "type": "application/vnd.openxmlformats-officedocument.presentationml.presentation",
+    "date": "2025-09-24"
+  },
+  {
+    "name": "Documento Final 3",
+    "url": "assets/docs/Documento_Final_3.pptx",
+    "type": "application/vnd.openxmlformats-officedocument.presentationml.presentation",
+    "date": "2025-09-24"
+  },
+  {
+    "name": "Documento Final 5",
+    "url": "assets/docs/Documento_Final_5.pptx",
+    "type": "application/vnd.openxmlformats-officedocument.presentationml.presentation",
+    "date": "2025-09-25"
+  },
+  {
     "name": "Maestro de Documentos",
     "url": "assets/docs/Maestro_de_Documento.xlsx",
     "type": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
-    "date": "2025-08-10"
+    "date": "2025-09-24"
   },
   {
     "name": "Script Definicion de Procesos Grupo 5",
@@ -75,7 +93,7 @@
     "name": "Bitacora Tiempo de Desarrollo",
     "url": "assets/docs/BitacoraTiempo_Desarrollo.xlsx",
     "type": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
-    "date": "2025-09-10"
+    "date": "2025-09-24"
   },
   {
     "name": "Plantilla Administracion de configuración",
@@ -177,7 +195,7 @@
     "name": "Bitacora Tiempo Nicolas",
     "url": "assets/docs/Bitacora_Tiempo_Nicolas.docx",
     "type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
-    "date": "2025-09-10"
+    "date": "2025-09-24"
   },
   {
     "name": "Diagrama uso de caso",
@@ -262,5 +280,23 @@
     "url": "assets/docs/Plan_de_Calidad.docx",
     "type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
     "date": "2025-09-10"
+  },
+  {
+    "name": "Plantilla SDS",
+    "url": "assets/docs/Plantilla_SDS.docx",
+    "type": "application/vnd.openxmlformats-officedocument.presentationml.presentation",
+    "date": "2025-08-10"
+  },
+  {
+    "name": "Script Requerimientos",
+    "url": "assets/docs/Script_Requerimientos.docx",
+    "type": "application/vnd.openxmlformats-officedocument.presentationml.presentation",
+    "date": "2025-08-10"
+  },
+  {
+    "name": "Script Diseño",
+    "url": "assets/docs/Script_Diseño.docx",
+    "type": "application/vnd.openxmlformats-officedocument.presentationml.presentation",
+    "date": "2025-08-10"
   }
 ]
