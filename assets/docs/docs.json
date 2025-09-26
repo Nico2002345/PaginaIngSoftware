@@ -3,300 +3,351 @@
     "name": "Acta Compromiso Grupo 2",
     "url": "assets/docs/ACTA_DE_COMPROMISO_Grupo_2.docx",
     "type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
-    "date": "2025-08-10"
+    "date": "2025-08-10",
+  "phase": "Iniciación"
   },
   {
     "name": "Acta Compromiso Grupo 3",
     "url": "assets/docs/ACTA_DE_COMPROMISO_Grupo_3.docx",
     "type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
-    "date": "2025-08-10"
+    "date": "2025-08-10",
+    "phase": "Iniciación"
   },
   {
     "name": "Acta Compromiso Grupo 4",
     "url": "assets/docs/ACTA_DE_COMPROMISO_Grupo_4.docx",
     "type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
-    "date": "2025-08-10"
+    "date": "2025-08-10",
+    "phase": "Iniciación"
   },
   {
     "name": "Acta Compromiso Grupo 5",
     "url": "assets/docs/ACTA_DE_COMPROMISO_Grupo_5.docx",
     "type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
-    "date": "2025-08-10"
+    "date": "2025-08-10",
+    "phase": "Iniciación"
   },
   {
     "name": "Acta Compromiso Grupo 6",
     "url": "assets/docs/ACTA_DE_COMPROMISO_Grupo_6.docx",
     "type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
-    "date": "2025-08-10"
+    "date": "2025-08-10",
+    "phase": "Iniciación"
   },
   {
     "name": "Acta de Compromiso Grupo",
     "url": "assets/docs/Acta_de_Compromiso_Grupo.docx",
     "type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
-    "date": "2025-08-10"
+    "date": "2025-08-10",
+    "phase": "Iniciación"
   },
   {
     "name": "Acta de Iniciacion Grupo",
     "url": "assets/docs/Acta_de_Iniciacion_Grupo.docx",
     "type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
-    "date": "2025-08-10"
+    "date": "2025-08-10",
+    "phase": "Iniciación"
   },
   {
     "name": "Control de Asignaciones de Grupo",
     "url": "assets/docs/ControlAsignaciones_Grupo.xlsx",
     "type": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
-    "date": "2025-09-24"
+    "date": "2025-09-24",
+    "phase": "Iniciacion,Estrategia,Requirimientos,Planeacion,Diseño,"
   },
   {
     "name": "Log de Defectos",
-    "url": "assets/docs/logDefectos.pdf",
+    "url": "assets/docs/logDefectos.xlsx",
     "type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
-    "date": "2025-09-24"
+    "date": "2025-09-25",
+    "phase": "Iniciacion,Estrategia,Requirimientos,Planeacion,Diseño,"
   },
   {
     "name": "Documento Final",
     "url": "assets/docs/Documento_Final.pptx",
     "type": "application/vnd.openxmlformats-officedocument.presentationml.presentation",
-    "date": "2025-08-10"
+    "date": "2025-08-10",
+    "phase": "Iniciación"
   },
   {
     "name": "Documento Final 2",
     "url": "assets/docs/Documento_Final_2.pptx",
     "type": "application/vnd.openxmlformats-officedocument.presentationml.presentation",
-    "date": "2025-09-24"
+    "date": "2025-09-24",
+    "phase": "Estrategia"
   },
   {
     "name": "Documento Final 3",
     "url": "assets/docs/Documento_Final_3.pptx",
     "type": "application/vnd.openxmlformats-officedocument.presentationml.presentation",
-    "date": "2025-09-24"
+    "date": "2025-09-24",
+    "phase": "Planeacion"
   },
   {
     "name": "Documento Final 5",
     "url": "assets/docs/Documento_Final_5.pptx",
     "type": "application/vnd.openxmlformats-officedocument.presentationml.presentation",
-    "date": "2025-09-25"
+    "date": "2025-09-25",
+    "phase": "Diseño"
   },
   {
     "name": "Maestro de Documentos",
     "url": "assets/docs/Maestro_de_Documento.xlsx",
     "type": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
-    "date": "2025-09-24"
+    "date": "2025-09-24",
+    "phase": "Iniciacion,Estrategia,Requirimientos,Planeacion,Diseño,"
   },
   {
     "name": "Script Definicion de Procesos Grupo 5",
     "url": "assets/docs/Script_definición_de_procesos_Grupo_5.docx",
     "type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
-    "date": "2025-08-10"
+    "date": "2025-08-10",
+    "phase": "Iniciacion"
   },
   {
     "name": "Bitacora Tiempo de Desarrollo",
     "url": "assets/docs/BitacoraTiempo_Desarrollo.xlsx",
     "type": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
-    "date": "2025-09-24"
+    "date": "2025-09-24",
+    "phase": "Iniciacion,Estrategia,Requirimientos,Planeacion,Diseño,"
   },
   {
     "name": "Plantilla Administracion de configuración",
     "url": "assets/docs/Plantilla_AdminConfiguracion.docx",
     "type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
-    "date": "2025-08-26"
+    "date": "2025-08-26",
+   "phase": "Estrategia"
   },
   {
     "name": "Plantilla Detalle Caso de Uso",
     "url": "assets/docs/Plantilla_DetalleCasoUso.docx",
     "type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
-    "date": "2025-08-26"
+    "date": "2025-08-26",
+    "phase": "Requirimientos"
   },
   {
     "name": "Script Definicion de Procesos II",
     "url": "assets/docs/Script_definición_de_procesos_2.docx",
     "type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
-    "date": "2025-08-26"
+    "date": "2025-08-26",
+    "phase": "Estrategia"
   },
   {
     "name": "DT Ptl DetalleCasoUso 1 LE",
     "url": "assets/docs/DT_Ptl_DetalleCasoUso_1_LE.docx",
     "type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
-    "date": "2025-08-26"
+    "date": "2025-08-26",
+    "phase": "Requirimientos"
   },
   {
     "name": "DT Ptl DetalleCasoUso 2 LE",
     "url": "assets/docs/DT_Ptl_DetalleCasoUso_2_LE.docx",
     "type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
-    "date": "2025-08-26"
+    "date": "2025-08-26",
+    "phase": "Requirimientos"
   },
   {
     "name": "DT Ptl DetalleCasoUso 3 LE",
     "url": "assets/docs/DT_Ptl_DetalleCasoUso_3_LE.docx",
     "type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
-    "date": "2025-08-26"
+    "date": "2025-08-26",
+    "phase": "Requirimientos"
   },
   {
     "name": "DT Ptl EscenarioCalidad 2 LE",
     "url": "assets/docs/DT_Ptl_EscenarioCalidad_2_LE.docx",
     "type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
-    "date": "2025-08-26"
+    "date": "2025-08-26",
+    "phase": "Requirimientos"
   },
   {
     "name": "DT Ptl EscenarioCalidad 3 LE",
     "url": "assets/docs/DT_Ptl_EscenarioCalidad_3_LE.docx",
     "type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
-    "date": "2025-08-26"
+    "date": "2025-08-26",
+    "phase": "Requirimientos"
   },
   {
     "name": "DT Ptl EscenarioCalidad",
     "url": "assets/docs/DT_Ptl_EscenarioCalidad.docx",
     "type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
-    "date": "2025-08-26"
+    "date": "2025-08-26",
+    "phase": "Requirimientos"
   },
   {
     "name": "dt ptl plan adminconfiguracion v1",
     "url": "assets/docs/dt_ptl_plan_adminconfiguracion_v1.docx",
     "type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
-    "date": "2025-08-26"
+    "date": "2025-08-26",
+    "phase": "Estrategia"
   },
   {
     "name": "Plantilla Control de Versiones",
     "url": "assets/docs/Plantilla_Control_de_Versiones.xlsx",
     "type": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
-    "date": "2025-08-26"
+    "date": "2025-08-26",
+    "phase": "Iniciacion"
   },
   {
     "name": "Plantilla DefinicionEstrategia ",
     "url": "assets/docs/Plantilla_DefinicionEstrategia .docx",
     "type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
-    "date": "2025-08-26"
+    "date": "2025-08-26",
+    "phase": "Estrategia"
   },
   {
     "name": "Plantilla Plan Riesgos",
     "url": "assets/docs/Plantilla_Plan_Riesgos.docx",
     "type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
-    "date": "2025-08-26"
+    "date": "2025-08-26",
+    "phase": "Estrategia"
   },
   {
     "name": "Requirimientos atributos de calidad 1",
     "url": "assets/docs/Requirimientos_atributos_de_calidad_1.docx",
     "type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
-    "date": "2025-08-26"
+    "date": "2025-08-26",
+    "phase": "Requirimientos"
   },
   {
     "name": "Requirimientos atributos de calidad 2",
     "url": "assets/docs/Requirimientos_atributos_de_calidad_2.docx",
     "type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
-    "date": "2025-08-26"
+    "date": "2025-08-26",
+    "phase": "Requirimientos"
   },
   {
     "name": "Requirimientos atributos de calidad 3",
     "url": "assets/docs/Requirimientos_atributos_de_calidad_3.docx",
     "type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
-    "date": "2025-08-26"
+    "date": "2025-08-26",
+    "phase": "Requirimientos"
   },
   {
     "name": "Bitacora Tiempo Nicolas",
     "url": "assets/docs/Bitacora_Tiempo_Nicolas.docx",
     "type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
-    "date": "2025-09-24"
+    "date": "2025-09-24",
+    "phase": "Iniciacion,Estrategia,Requirimientos,Planeacion,Diseño,"
+
   },
   {
     "name": "Diagrama uso de caso",
     "url": "assets/docs/Diagrama_uso_de_Caso.docx",
     "type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
-    "date": "2025-09-01"
+    "date": "2025-09-01",
+    "phase": "Requirimientos"
   },
   {
     "name": "Diagrama de caso de Uso 4",
     "url": "assets/docs/DetalleCasoUso_4_LD.docx",
     "type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
-    "date": "2025-09-02"
+    "date": "2025-09-02",
+    "phase": "Requirimientos"
   },
   {
     "name": "Diagrama de caso de Uso 5",
     "url": "assets/docs/DetalleCasoUso_5_LD.docx",
     "type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
-    "date": "2025-09-02"
+    "date": "2025-09-02",
+    "phase": "Requirimientos"
   },
   {
     "name": "Diagrama de caso de Uso 6",
     "url": "assets/docs/DetalleCasoUso_6_LD.docx",
     "type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
-    "date": "2025-09-02"
+    "date": "2025-09-02",
+    "phase": "Requirimientos"
   },
   {
     "name": "Requirimientos atributos de calidad 4",
     "url": "assets/docs/Requirimientos_atributos_de_calidad_4_LD.docx",
     "type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
-    "date": "2025-09-03"
+    "date": "2025-09-03",
+    "phase": "Requirimientos"
   },
   {
     "name": "Requirimientos atributos de calidad 5",
     "url": "assets/docs/Requirimientos_atributos_de_calidad_5_LD.docx",
     "type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
-    "date": "2025-09-03"
+    "date": "2025-09-03",
+    "phase": "Requirimientos"
   },
   {
     "name": "Requirimientos atributos de calidad 6",
     "url": "assets/docs/Requirimientos_atributos_de_calidad_6_LD.docx",
     "type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
-    "date": "2025-09-03"
+    "date": "2025-09-03",
+    "phase": "Requirimientos"
   },
   {
     "name": "Escenario de Calidad 4",
     "url": "assets/docs/EscenarioCalidad_4_LD.docx",
     "type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
-    "date": "2025-09-03"
+    "date": "2025-09-03",
+    "phase": "Requirimientos"
   },
   {
     "name": "Escenario de Calidad 5",
     "url": "assets/docs/EscenarioCalidad_5_LD.docx",
     "type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
-    "date": "2025-09-03"
+    "date": "2025-09-03",
+    "phase": "Requirimientos"
   },
   {
     "name": "Escenario de Calidad 6",
     "url": "assets/docs/EscenarioCalidad_6_LD.docx",
     "type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
-    "date": "2025-09-03"
+    "date": "2025-09-03",
+    "phase": "Requirimientos"
   },
   {
     "name": "Script Planeación",
     "url": "assets/docs/Script_Planeación.docx",
     "type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
-    "date": "2025-09-10"
+    "date": "2025-09-10",
+    "phase": "Planeacion"
   },
   {
     "name": "Documento Final 4",
     "url": "assets/docs/Documento_Final_4.pptx",
     "type": "application/vnd.openxmlformats-officedocument.presentationml.presentation",
-    "date": "2025-08-10"
+    "date": "2025-08-10",
+    "phase": "Planeacion"
   },
   {
     "name": "Especificacion Detallada de Tareas",
     "url": "assets/docs/Especificacion_Detallada_Tareas.docx",
     "type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
-    "date": "2025-09-10"
+    "date": "2025-09-10",
+    "phase": "Planeacion"
   },
   {
     "name": "Plan de Calidad",
     "url": "assets/docs/Plan_de_Calidad.docx",
     "type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
-    "date": "2025-09-10"
+    "date": "2025-09-10",
+    "phase": "Planeacion"
   },
   {
     "name": "Plantilla SDS",
     "url": "assets/docs/Plantilla_SDS.docx",
     "type": "application/vnd.openxmlformats-officedocument.presentationml.presentation",
-    "date": "2025-08-10"
+    "date": "2025-08-10",
+    "phase": "Diseño"
   },
   {
     "name": "Script Requerimientos",
     "url": "assets/docs/Script_Requerimientos.docx",
     "type": "application/vnd.openxmlformats-officedocument.presentationml.presentation",
-    "date": "2025-08-10"
+    "date": "2025-08-10",
+    "phase": "Requirimientos"
   },
   {
     "name": "Script Diseño",
     "url": "assets/docs/Script_Diseño.docx",
     "type": "application/vnd.openxmlformats-officedocument.presentationml.presentation",
-    "date": "2025-08-10"
+    "date": "2025-08-10",
+    "phase": "Diseño"
   }
 ]

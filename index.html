@@ -173,21 +173,28 @@
 
     const fmtDate = s => new Date(s).toLocaleDateString(undefined, {year:'numeric', month:'short', day:'2-digit'});
 
+    // Orden predefinido de fases
+    const phaseOrder = ['Iniciación','Estrategia','Requerimientos','Planeación','Diseño'];
+
     function groupByPhaseAndYM(items) {
-      const phases = ['Iniciación','Estrategia','Requerimientos','Planeación','Diseño'];
       const map = {};
-      for(const phase of phases) map[phase] = {};
       for(const d of items){
         const dt = new Date(d.date);
         if(isNaN(dt)) continue;
         const ym = dt.getFullYear() + "-" + String(dt.getMonth()+1).padStart(2,'0');
-        const phase = d.phase || 'Iniciación';
-        (map[phase][ym] ||= []).push(d);
+        const phase = d.phase || 'Sin fase';
+        if(!map[phase]) map[phase] = {};
+        if(!map[phase][ym]) map[phase][ym] = [];
+        map[phase][ym].push(d);
       }
       return map;
     }
 
-    function ymLabel(ym){ const [y,m] = ym.split("-").map(Number); const dt = new Date(y, m-1, 1); return dt.toLocaleDateString(undefined, { year:'numeric', month:'long' }); }
+    function ymLabel(ym){ 
+      const [y,m] = ym.split("-").map(Number); 
+      const dt = new Date(y, m-1, 1); 
+      return dt.toLocaleDateString(undefined, { year:'numeric', month:'long' }); 
+    }
 
     function getQuickRange(){
       const now = new Date();
@@ -206,16 +213,36 @@
       const order = sortSel.value;
       const query = norm(qEl.value.trim());
       const { f, t } = getQuickRange();
+
       const filtered = DOCS
-        .filter(d => { const ts = new Date(d.date).getTime(); if(isNaN(ts)||ts<f||ts>t) return false; if(query&&!d._nameN.includes(query)) return false; return true; })
+        .filter(d => { 
+          const ts = new Date(d.date).getTime(); 
+          if(isNaN(ts)||ts<f||ts>t) return false; 
+          if(query&&!d._nameN.includes(query)) return false; 
+          return true; 
+        })
         .sort((a,b)=> order==='desc' ? (new Date(b.date)-new Date(a.date)) : (new Date(a.date)-new Date(b.date)));
+
       const grouped = groupByPhaseAndYM(filtered);
+
+      // Ordenar las fases según phaseOrder y luego alfabéticamente las no definidas
+      const phaseKeys = Object.keys(grouped).sort((a,b) => {
+        const iA = phaseOrder.indexOf(a);
+        const iB = phaseOrder.indexOf(b);
+        if(iA!==-1 && iB!==-1) return iA - iB;
+        if(iA!==-1) return -1;
+        if(iB!==-1) return 1;
+        return a.localeCompare(b);
+      });
+
       let firstPhase = true;
       let html = '';
-      for(const phase of Object.keys(grouped)){
+
+      for(const phase of phaseKeys){
         const phaseGroups = grouped[phase];
-        const keys = Object.keys(phaseGroups).sort((a,b)=> order==='desc' ? (a<b?1:-1) : (a<b?-1:1));
+        const keys = Object.keys(phaseGroups).sort((a,b)=> order==='desc' ? (b.localeCompare(a)) : (a.localeCompare(b)));
         if(keys.length===0) continue;
+
         html += `<details ${firstPhase?'open':''}><summary style="font-weight:800">${phase}</summary>`;
         for(const ym of keys){
           const rows = phaseGroups[ym].map(d => {
@@ -229,6 +256,7 @@
               </tr>
             `;
           }).join('');
+
           html += `
             <details ${firstPhase && keys[0]===ym ? 'open':''}>
               <summary>${ymLabel(ym)}</summary>
@@ -244,14 +272,22 @@
         html += `</details>`;
         firstPhase = false;
       }
+
       if(!html) html = `<p style="color:#9aa0a6">No hay documentos para mostrar con el filtro actual.</p>`;
       groupsEl.innerHTML = html;
+
       groupsEl.querySelectorAll('tr[data-url]').forEach(tr => {
         tr.addEventListener('click', async (ev) => {
           if(ev.target.tagName.toLowerCase() === 'a') return;
           const url = tr.getAttribute('data-url');
           const type = tr.getAttribute('data-type') || "";
-          try{ const head = await fetch(url, { method:'HEAD' }); if(!head.ok){ preview.innerHTML = `<span class="error">No encontrado (HTTP ${head.status})<br><small>${url}</small></span>`; return; } }catch{}
+          try{ 
+            const head = await fetch(url, { method:'HEAD' }); 
+            if(!head.ok){ 
+              preview.innerHTML = `<span class="error">No encontrado (HTTP ${head.status})<br><small>${url}</small></span>`; 
+              return; 
+            } 
+          }catch{}
           showPreview(url, type);
         });
       });
@@ -287,3 +323,4 @@
   </script>
 </body>
 </html>
+
