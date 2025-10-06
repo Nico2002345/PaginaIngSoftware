@@ -4,70 +4,70 @@
     "url": "assets/docs/ACTA_DE_COMPROMISO_Grupo_2.docx",
     "type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
     "date": "2025-08-10",
-  "phase": "Iniciación"
+  "phase": "Iniciacion"
   },
   {
     "name": "Acta Compromiso Grupo 3",
     "url": "assets/docs/ACTA_DE_COMPROMISO_Grupo_3.docx",
     "type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
     "date": "2025-08-10",
-    "phase": "Iniciación"
+    "phase": "Iniciacion"
   },
   {
     "name": "Acta Compromiso Grupo 4",
     "url": "assets/docs/ACTA_DE_COMPROMISO_Grupo_4.docx",
     "type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
     "date": "2025-08-10",
-    "phase": "Iniciación"
+    "phase": "Iniciacion"
   },
   {
     "name": "Acta Compromiso Grupo 5",
     "url": "assets/docs/ACTA_DE_COMPROMISO_Grupo_5.docx",
     "type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
     "date": "2025-08-10",
-    "phase": "Iniciación"
+    "phase": "Iniciacion"
   },
   {
     "name": "Acta Compromiso Grupo 6",
     "url": "assets/docs/ACTA_DE_COMPROMISO_Grupo_6.docx",
     "type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
     "date": "2025-08-10",
-    "phase": "Iniciación"
+    "phase": "Iniciacion"
   },
   {
     "name": "Acta de Compromiso Grupo",
     "url": "assets/docs/Acta_de_Compromiso_Grupo.docx",
     "type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
     "date": "2025-08-10",
-    "phase": "Iniciación"
+    "phase": "Iniciacion"
   },
   {
     "name": "Acta de Iniciacion Grupo",
     "url": "assets/docs/Acta_de_Iniciacion_Grupo.docx",
     "type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
     "date": "2025-08-10",
-    "phase": "Iniciación"
+    "phase": "Iniciacion"
   },
   {
     "name": "Control de Asignaciones de Grupo",
     "url": "assets/docs/ControlAsignaciones_Grupo.xlsx",
     "type": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
-    "date": "2025-09-24",
-    "phase": "Iniciacion,Estrategia,Requirimientos,Planeacion,Diseño,"
+    "date": "2025-10-06",
+    "phase": "Iniciacion,Estrategia,Requirimientos,Planeacion,Diseño,Implementacion,Pruebas,"
   },
   {
     "name": "Log de Defectos",
     "url": "assets/docs/logDefectos.xlsx",
     "type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
-    "date": "2025-09-25",
-    "phase": "Iniciacion,Estrategia,Requirimientos,Planeacion,Diseño,"
+    "date": "2025-10-06",
+    "phase": "Iniciacion,Estrategia,Requirimientos,Planeacion,Diseño,Implementacion,Pruebas,"
   },
   {
     "name": "Documento Final",
     "url": "assets/docs/Documento_Final.pptx",
     "type": "application/vnd.openxmlformats-officedocument.presentationml.presentation",
     "date": "2025-08-10",
-    "phase": "Iniciación"
+    "phase": "Iniciacion"
   },
   {
     "name": "Documento Final 2",
@@ -227,8 +227,8 @@
     "name": "Bitacora Tiempo Nicolas",
     "url": "assets/docs/Bitacora_Tiempo_Nicolas.docx",
     "type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
-    "date": "2025-09-24",
-    "phase": "Iniciacion,Estrategia,Requirimientos,Planeacion,Diseño,"
+    "date": "2025-10-06",
+    "phase": "Iniciacion,Estrategia,Requirimientos,Planeacion,Diseño,Implementacion,Pruebas,"
 
   },
   {
@@ -262,6 +262,13 @@
   {
     "name": "Requirimientos atributos de calidad 4",
     "url": "assets/docs/Requirimientos_atributos_de_calidad_4_LD.docx",
+    "type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+    "date": "2025-09-03",
+    "phase": "Requirimientos"
+  },
+  {
+    "name": "Diagrama de clase",
+    "url": "assets/docs/Diagrama_de_Clase.docx",
     "type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
     "date": "2025-09-03",
     "phase": "Requirimientos"
@@ -349,5 +356,48 @@
     "type": "application/vnd.openxmlformats-officedocument.presentationml.presentation",
     "date": "2025-08-10",
     "phase": "Diseño"
+  },
+  {
+    "name": "Documento Final 6",
+    "url": "assets/docs/Documento_Final_6.pptx",
+    "type": "application/vnd.openxmlformats-officedocument.presentationml.presentation",
+    "date": "2025-09-25",
+    "phase": "Implementación"
+  },
+  {
+    "name": "Plan Implementacion",
+    "url": "assets/docs/Plan_Implementacion_LogiApp.docx",
+    "type": "application/vnd.openxmlformats-officedocument.presentationml.presentation",
+    "date": "2025-09-25",
+    "phase": "Implementación"
+  },
+  {
+    "name": "Script Implementacion",
+    "url": "assets/docs/Plan_Implementacion.docx",
+    "type": "application/vnd.openxmlformats-officedocument.presentationml.presentation",
+    "date": "2025-09-25",
+    "phase": "Implementación"
+  },
+  {
+    "name": "Plan Pruebas Unitarias",
+    "url": "assets/docs/Plan_Pruebas_Unitarias.xlsx",
+    "type": "application/vnd.openxmlformats-officedocument.presentationml.presentation",
+    "date": "2025-09-25",
+    "phase": "Implementación"
+  },
+   {
+    "name": "Plantilla Script Pruebas",
+    "url": "assets/docs/Plantilla_Script_Pruebas.xlsx",
+    "type": "application/vnd.openxmlformats-officedocument.presentationml.presentation",
+    "date": "2025-10-06",
+    "phase": "Pruebas"
+  },
+  {
+    "name": "Documento Final 7",
+    "url": "assets/docs/Documento_Final_7.pptx",
+    "type": "application/vnd.openxmlformats-officedocument.presentationml.presentation",
+    "date": "2025-10-06",
+    "phase": "Pruebas"
   }
+
 ]
