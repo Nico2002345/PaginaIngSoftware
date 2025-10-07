@@ -398,6 +398,13 @@
     "type": "application/vnd.openxmlformats-officedocument.presentationml.presentation",
     "date": "2025-10-06",
     "phase": "Pruebas"
+  },
+  {
+    "name": "Plantilla Script Postmortem",
+    "url": "assets/docs/Plantilla_Script_Postmortem.docx",
+    "type": "application/vnd.openxmlformats-officedocument.presentationml.presentation",
+    "date": "2025-10-07",
+    "phase": "Postmortem"
   }
 
 ]
