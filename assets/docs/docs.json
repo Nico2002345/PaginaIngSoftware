@@ -94,8 +94,8 @@
     "name": "Maestro de Documentos",
     "url": "assets/docs/Maestro_de_Documento.xlsx",
     "type": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
-    "date": "2025-09-24",
-    "phase": "Iniciacion,Estrategia,Requirimientos,Planeacion,Diseño,"
+    "date": "2025-10-06",
+    "phase": "Iniciacion,Estrategia,Requirimientos,Planeacion,Diseño,implementación,Pruebas,"
   },
   {
     "name": "Script Definicion de Procesos Grupo 5",
