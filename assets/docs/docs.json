@@ -53,14 +53,14 @@
     "url": "assets/docs/ControlAsignaciones_Grupo.xlsx",
     "type": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
     "date": "2025-10-06",
-    "phase": "Iniciacion,Estrategia,Requirimientos,Planeacion,Diseño,Implementacion,Pruebas,"
+    "phase": "Iniciacion,Estrategia,Requirimientos,Planeacion,Diseño,Implementacion,Pruebas,Postmortem,"
   },
   {
     "name": "Log de Defectos",
     "url": "assets/docs/logDefectos.xlsx",
     "type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
     "date": "2025-10-06",
-    "phase": "Iniciacion,Estrategia,Requirimientos,Planeacion,Diseño,Implementacion,Pruebas,"
+    "phase": "Iniciacion,Estrategia,Requirimientos,Planeacion,Diseño,Implementacion,Pruebas,Postmortem,"
   },
   {
     "name": "Documento Final",
