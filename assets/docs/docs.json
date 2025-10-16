@@ -412,5 +412,61 @@
     "type": "application/vnd.openxmlformats-officedocument.presentationml.presentation",
     "date": "2025-10-07",
     "phase": "Postmortem"
+  },
+  {
+    "name": "Documento Revision y correciones Estrategia",
+    "url": "assets/docs/Documento_de_Revision_y_Correciones_Estrategia.docx",
+    "type": "application/vnd.openxmlformats-officedocument.presentationml.presentation",
+    "date": "2025-10-15",
+    "phase": "Estrategia"
+  },
+  {
+    "name": "Documento Revision y correciones Iniciacion",
+    "url": "assets/docs/Documento_de_Revision_y_Correciones_Iniciacion.docx",
+    "type": "application/vnd.openxmlformats-officedocument.presentationml.presentation",
+    "date": "2025-10-15",
+    "phase": "Iniciacion"
+  },
+  {
+    "name": "Documento Revision y correciones Requerimientos",
+    "url": "assets/docs/Documento_de_Revision_y_Correciones_Requirimientos.docx",
+    "type": "application/vnd.openxmlformats-officedocument.presentationml.presentation",
+    "date": "2025-10-15",
+    "phase": "Requirimientos"
+  },
+  {
+    "name": "Documento Revision y correciones Planeacion",
+    "url": "assets/docs/Documento_de_Revision_y_Correciones_Planeacion.docx",
+    "type": "application/vnd.openxmlformats-officedocument.presentationml.presentation",
+    "date": "2025-10-15",
+    "phase": "Planeacion"
+  },
+  {
+    "name": "Documento Revision y correciones Diseño",
+    "url": "assets/docs/Documento_de_Revision_y_Correciones_Diseño.docx",
+    "type": "application/vnd.openxmlformats-officedocument.presentationml.presentation",
+    "date": "2025-10-15",
+    "phase": "Diseño"
+  },
+  {
+    "name": "Documento Revision y correciones Implementacion",
+    "url": "assets/docs/Documento_de_Revision_y_Correciones_Implementacion.docx",
+    "type": "application/vnd.openxmlformats-officedocument.presentationml.presentation",
+    "date": "2025-10-15",
+    "phase": "Implementación"
+  },
+  {
+    "name": "Documento Revision y correciones Pruebas",
+    "url": "assets/docs/Documento_de_Revision_y_Correciones_Pruebas.docx",
+    "type": "application/vnd.openxmlformats-officedocument.presentationml.presentation",
+    "date": "2025-10-15",
+    "phase": "Pruebas"
+  },
+  {
+    "name": "Documento Revision y correciones Postmortem",
+    "url": "assets/docs/Documento_de_Revision_y_Correciones_Postmortem.docx",
+    "type": "application/vnd.openxmlformats-officedocument.presentationml.presentation",
+    "date": "2025-10-15",
+    "phase": "Postmortem"
   }
 ]
