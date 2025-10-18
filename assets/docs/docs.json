@@ -98,7 +98,7 @@
     "phase": "Iniciacion,Estrategia,Requirimientos,Planeacion,Diseño,Implementación,Pruebas,Postmortem,"
   },
   {
-    "name": "Script Definicion de Procesos Grupo 5",
+    "name": "Script Definicion de Procesos Iniciacion",
     "url": "assets/docs/Script_definición_de_procesos_Grupo_5.docx",
     "type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
     "date": "2025-08-10",
@@ -126,7 +126,7 @@
     "phase": "Requirimientos"
   },
   {
-    "name": "Script Definicion de Procesos II",
+    "name": "Script Estrategia",
     "url": "assets/docs/Script_definición_de_procesos_2.docx",
     "type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
     "date": "2025-08-26",
