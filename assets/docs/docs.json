@@ -475,5 +475,12 @@
     "type": "application/vnd.openxmlformats-officedocument.presentationml.presentation",
     "date": "2025-10-21",
     "phase": "Postmortem"
+  },
+   {
+    "name": "Presentacion Postmortem",
+    "url": "assets/docs/Postmortem_Proyecto_Presentacion.pptx",
+    "type": "application/vnd.openxmlformats-officedocument.presentationml.presentation",
+    "date": "2025-10-22",
+    "phase": "Postmortem"
   }
 ]
