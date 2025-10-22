@@ -468,5 +468,12 @@
     "type": "application/vnd.openxmlformats-officedocument.presentationml.presentation",
     "date": "2025-10-15",
     "phase": "Postmortem"
+  },
+  {
+    "name": "Informe Postmortem",
+    "url": "assets/docs/Documento_Informe_de_Postmortem.docx",
+    "type": "application/vnd.openxmlformats-officedocument.presentationml.presentation",
+    "date": "2025-10-21",
+    "phase": "Postmortem"
   }
 ]
