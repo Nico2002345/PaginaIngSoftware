@@ -482,5 +482,26 @@
     "type": "application/vnd.openxmlformats-officedocument.presentationml.presentation",
     "date": "2025-10-22",
     "phase": "Postmortem"
+  },
+  {
+    "name": "Informe Final Iniciacion/Estrategia",
+    "url": "assets/docs/Informe_Final_Estrategia.pptx",
+    "type": "application/vnd.openxmlformats-officedocument.presentationml.presentation",
+    "date": "2025-10-23",
+    "phase": "IniciacionYEstrategia"
+  },
+  {
+    "name": "Script Iniciacion/Estrategia",
+    "url": "assets/docs/Script_Iniciacion_Estrategia.docx",
+    "type": "application/vnd.openxmlformats-officedocument.presentationml.presentation",
+    "date": "2025-10-23",
+    "phase": "IniciacionYEstrategia"
+  },
+  {
+    "name": "Acta de Compromiso Iniciacion/Estrategi",
+    "url": "assets/docs/Acta_de_Compromiso_2fase.docx",
+    "type": "application/vnd.openxmlformats-officedocument.presentationml.presentation",
+    "date": "2025-10-23",
+    "phase": "IniciacionYEstrategia"
   }
 ]
