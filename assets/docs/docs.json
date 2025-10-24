@@ -95,7 +95,7 @@
     "url": "assets/docs/Maestro_de_Documento.xlsx",
     "type": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
     "date": "2025-10-06",
-    "phase": "Iniciacion,Estrategia,Requirimientos,Planeacion,Diseño,Implementación,Pruebas,Postmortem,"
+    "phase": "Iniciacion,Estrategia,Requirimientos,Planeacion,Diseño,Implementación,Pruebas,Postmortem,IniciacionYEstrategia,"
   },
   {
     "name": "Script Iniciacion",
