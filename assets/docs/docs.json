@@ -455,13 +455,7 @@
     "date": "2025-10-15",
     "phase": "Implementación"
   },
-  {
-    "name": "Documento Revision y correciones Pruebas",
-    "url": "assets/docs/Documento_de_Revision_y_Correciones_Pruebas.docx",
-    "type": "application/vnd.openxmlformats-officedocument.presentationml.presentation",
-    "date": "2025-10-15",
-    "phase": "Pruebas"
-  },
+  
   {
     "name": "Documento Revision y correciones Postmortem",
     "url": "assets/docs/Documento_de_Revision_y_Correciones_Postmortem.docx",
@@ -545,5 +539,12 @@
     "type": "application/vnd.openxmlformats-officedocument.presentationml.presentation",
     "date": "2025-08-10",
     "phase": "Requirimientos"
+  },
+  {
+    "name": "Plantilla Casos de Prueba",
+    "url": "assets/docs/Plantilla_casos_de_Prueba.docx",
+    "type": "application/vnd.openxmlformats-officedocument.presentationml.presentation",
+    "date": "2025-10-15",
+    "phase": "Pruebas"
   }
 ]
