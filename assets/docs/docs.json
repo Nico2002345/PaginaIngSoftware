@@ -503,5 +503,40 @@
     "type": "application/vnd.openxmlformats-officedocument.presentationml.presentation",
     "date": "2025-10-23",
     "phase": "IniciacionYEstrategia"
+  },
+  {
+    "name": "Diagrama Funcional",
+    "url": "assets/docs/Diagrama_Funcional.docx",
+    "type": "application/vnd.openxmlformats-officedocument.presentationml.presentation",
+    "date": "2025-08-10",
+    "phase": "Requirimientos"
+  },
+  {
+    "name": "Diagrama Informacion",
+    "url": "assets/docs/Diagrama_Informacion.docx",
+    "type": "application/vnd.openxmlformats-officedocument.presentationml.presentation",
+    "date": "2025-08-10",
+    "phase": "Requirimientos"
+  },
+  {
+    "name": "Diagrama Despliegue Y Desarrollo",
+    "url": "assets/docs/Diagrama_Despliegue_Desarrollo.docx",
+    "type": "application/vnd.openxmlformats-officedocument.presentationml.presentation",
+    "date": "2025-08-10",
+    "phase": "Requirimientos"
+  },
+  {
+    "name": "Diagrama Concurrencia",
+    "url": "assets/docs/Diagrama_Concurrencia.docx",
+    "type": "application/vnd.openxmlformats-officedocument.presentationml.presentation",
+    "date": "2025-08-10",
+    "phase": "Requirimientos"
+  },
+  {
+    "name": "Diagrama Operacional",
+    "url": "assets/docs/Diagrama_Operacional.docx",
+    "type": "application/vnd.openxmlformats-officedocument.presentationml.presentation",
+    "date": "2025-08-10",
+    "phase": "Requirimientos"
   }
 ]
