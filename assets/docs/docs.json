@@ -538,5 +538,12 @@
     "type": "application/vnd.openxmlformats-officedocument.presentationml.presentation",
     "date": "2025-08-10",
     "phase": "Requirimientos"
+  },
+  {
+    "name": "Diagrama Caso de Uso",
+    "url": "assets/docs/Diagrama_Caso_de_Uso.docx",
+    "type": "application/vnd.openxmlformats-officedocument.presentationml.presentation",
+    "date": "2025-08-10",
+    "phase": "Requirimientos"
   }
 ]
