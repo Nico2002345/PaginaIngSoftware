@@ -53,14 +53,14 @@
     "url": "assets/docs/ControlAsignaciones_Grupo.xlsx",
     "type": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
     "date": "2025-10-06",
-    "phase": "Iniciacion,Estrategia,Requirimientos,Planeacion,Diseño,Implementacion,Pruebas,Postmortem,"
+    "phase": "Iniciacion,Estrategia,Requirimientos,Planeacion,Diseño,Implementacion,Pruebas,Postmortem,IniciacionYEstrategia,RequerimientosYPlaneación"
   },
   {
     "name": "Log de Defectos",
     "url": "assets/docs/logDefectos.xlsx",
     "type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
     "date": "2025-10-06",
-    "phase": "Iniciacion,Estrategia,Requirimientos,Planeacion,Diseño,Implementacion,Pruebas,Postmortem,"
+    "phase": "Iniciacion,Estrategia,Requirimientos,Planeacion,Diseño,Implementacion,Pruebas,Postmortem,IniciacionYEstrategia,RequerimientosYPlaneación"
   },
   {
     "name": "Documento Final",
@@ -95,7 +95,7 @@
     "url": "assets/docs/Maestro_de_Documento.xlsx",
     "type": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
     "date": "2025-10-23",
-    "phase": "Iniciacion,Estrategia,Requirimientos,Planeacion,Diseño,Implementación,Pruebas,Postmortem,IniciacionYEstrategia,"
+    "phase": "Iniciacion,Estrategia,Requirimientos,Planeacion,Diseño,Implementación,Pruebas,Postmortem,IniciacionYEstrategia,RequerimientosYPlaneación"
   },
   {
     "name": "Script Iniciacion",
@@ -546,5 +546,96 @@
     "type": "application/vnd.openxmlformats-officedocument.presentationml.presentation",
     "date": "2025-10-15",
     "phase": "Pruebas"
+  },
+  {
+    "name": "Requerimiento atributo de calidad 3 F2",
+    "url": "assets/docs/Requirimientos_atributos_de_calidad_3_F2.docx",
+    "type": "application/vnd.openxmlformats-officedocument.presentationml.presentation",
+    "date": "2025-11-7",
+    "phase": "RequerimientosYPlaneación"
+  },
+  {
+    "name": "Requerimiento atributo de calidad 2 F2",
+    "url": "assets/docs/Requirimientos_atributos_de_calidad_2_F2.docx",
+    "type": "application/vnd.openxmlformats-officedocument.presentationml.presentation",
+    "date": "2025-11-7",
+    "phase": "RequerimientosYPlaneación"
+  },
+  {
+    "name": "Requerimiento atributo de calidad 1 F2",
+    "url": "assets/docs/Requirimientos_atributos_de_calidad_1_F2.docx",
+    "type": "application/vnd.openxmlformats-officedocument.presentationml.presentation",
+    "date": "2025-11-7",
+    "phase": "RequerimientosYPlaneación"
+  },
+   {
+    "name": "Script Requerimiento_Planeacion",
+    "url": "assets/docs/Plantilla_Script_Requerimiento_Planeacion.docx",
+    "type": "application/vnd.openxmlformats-officedocument.presentationml.presentation",
+    "date": "2025-11-7",
+    "phase": "RequerimientosYPlaneación"
+  },
+  {
+    "name": "Plantilla Escenario de calidad 3 F2",
+    "url": "assets/docs/Plantilla_EscenarioCalidad_3_F2.docx",
+    "type": "application/vnd.openxmlformats-officedocument.presentationml.presentation",
+    "date": "2025-11-7",
+    "phase": "RequerimientosYPlaneación"
+  },
+  {
+    "name": "Plantilla Escenario de calidad 2 F2",
+    "url": "assets/docs/Plantilla_EscenarioCalidad_2_F2.docx",
+    "type": "application/vnd.openxmlformats-officedocument.presentationml.presentation",
+    "date": "2025-11-7",
+    "phase": "RequerimientosYPlaneación"
+  },
+  {
+    "name": "Plantilla Escenario de calidad 1 F2",
+    "url": "assets/docs/Plantilla_EscenarioCalidad_1_Fase2.docx",
+    "type": "application/vnd.openxmlformats-officedocument.presentationml.presentation",
+    "date": "2025-11-7",
+    "phase": "RequerimientosYPlaneación"
+  },
+  {
+    "name": "Plantilla Detalle Caso de Uso 3 F2",
+    "url": "assets/docs/Plantilla_DetalleCasoUso_LE_3_F2.docx",
+    "type": "application/vnd.openxmlformats-officedocument.presentationml.presentation",
+    "date": "2025-11-7",
+    "phase": "RequerimientosYPlaneación"
+  },
+  {
+    "name": "Plantilla Detalle Caso de Uso 2 F2",
+    "url": "assets/docs/Plantilla_DetalleCasoUso_LE_2_F2.docx",
+    "type": "application/vnd.openxmlformats-officedocument.presentationml.presentation",
+    "date": "2025-11-7",
+    "phase": "RequerimientosYPlaneación"
+  },
+  {
+    "name": "Plantilla Detalle Caso de Uso 1 F2",
+    "url": "assets/docs/Plantilla_DetalleCasoUso_LE_1_Fase2.docx",
+    "type": "application/vnd.openxmlformats-officedocument.presentationml.presentation",
+    "date": "2025-11-7",
+    "phase": "RequerimientosYPlaneación"
+  },
+  {
+    "name": "Plantilla Plan de Calidad F2",
+    "url": "assets/docs/Plan_de_Calidad_Fase2.docx",
+    "type": "application/vnd.openxmlformats-officedocument.presentationml.presentation",
+    "date": "2025-11-7",
+    "phase": "RequerimientosYPlaneación"
+  },
+  {
+    "name": "Plantilla Especificacion Detallada Tareas",
+    "url": "assets/docs/Especificacion_Detallada_Tareas_Fase2.docx",
+    "type": "application/vnd.openxmlformats-officedocument.presentationml.presentation",
+    "date": "2025-11-7",
+    "phase": "RequerimientosYPlaneación"
+  },
+  {
+    "name": "Documento Final Requerimiento_Planeacion",
+    "url": "assets/docs/Documento_Final_Requerimiento_Planeacion.pptx",
+    "type": "application/vnd.openxmlformats-officedocument.presentationml.presentation",
+    "date": "2025-11-7",
+    "phase": "RequerimientosYPlaneación"
   }
 ]
