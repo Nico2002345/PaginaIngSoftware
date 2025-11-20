@@ -498,6 +498,36 @@
     "date": "2025-10-23",
     "phase": "IniciacionYEstrategia"
   },
+ {
+    "name": "Plantilla Plan Riesgos Iniciacion/Estrategia",
+    "url": "assets/docs/Plantilla_Plan_Riesgos_Iniciacion_Estrategia.docx",
+    "type": "application/vnd.openxmlformats-officedocument.presentationml.presentation",
+    "date": "2025-10-23",
+    "phase": "IniciacionYEstrategia"
+  },
+ {
+    "name": "Plantilla adminconfiguracion Fase2",
+    "url": "assets/docs/Plantilla_adminconfiguracion_F2.docx",
+    "type": "application/vnd.openxmlformats-officedocument.presentationml.presentation",
+    "date": "2025-10-23",
+    "phase": "IniciacionYEstrategia"
+  },
+ {
+    "name": "Acta de Iniciacion Fase 2",
+    "url": "assets/docs/Acta_de_Iniciacion_Fase2.docx",
+    "type": "application/vnd.openxmlformats-officedocument.presentationml.presentation",
+    "date": "2025-10-23",
+    "phase": "IniciacionYEstrategia"
+  },
+{
+    "name": "Documento Revision y Correccion Iniciacion/Estrategi",
+    "url": "assets/docs/Documento_de_Revision_y_Correciones_Iniciacion_Estrategia.docx",
+    "type": "application/vnd.openxmlformats-officedocument.presentationml.presentation",
+    "date": "2025-10-23",
+    "phase": "IniciacionYEstrategia"
+  },
+
+
   {
     "name": "Diagrama Funcional",
     "url": "assets/docs/Diagrama_Funcional.docx",
