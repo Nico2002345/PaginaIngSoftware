@@ -52,15 +52,15 @@
     "name": "Control de Asignaciones de Grupo",
     "url": "assets/docs/ControlAsignaciones_Grupo.xlsx",
     "type": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
-    "date": "2025-10-06",
-    "phase": "Iniciacion,Estrategia,Requirimientos,Planeacion,Diseño,Implementacion,Pruebas,Postmortem,IniciacionYEstrategia,RequerimientosYPlaneación"
+    "date": "2025-11-20",
+    "phase": "Iniciacion,Estrategia,Requirimientos,Planeacion,Diseño,Implementacion,Pruebas,Postmortem,IniciacionYEstrategia,RequerimientosYPlaneación,DiseñoF2,ImplementaciónYPruebas,PostmortemF2"
   },
   {
     "name": "Log de Defectos",
     "url": "assets/docs/logDefectos.xlsx",
     "type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
-    "date": "2025-10-06",
-    "phase": "Iniciacion,Estrategia,Requirimientos,Planeacion,Diseño,Implementacion,Pruebas,Postmortem,IniciacionYEstrategia,RequerimientosYPlaneación"
+    "date": "2025-11-20",
+    "phase": "Iniciacion,Estrategia,Requirimientos,Planeacion,Diseño,Implementacion,Pruebas,Postmortem,IniciacionYEstrategia,RequerimientosYPlaneación,DiseñoF2,ImplementaciónYPruebas,PostmortemF2"
   },
   {
     "name": "Documento Final",
@@ -94,8 +94,8 @@
     "name": "Maestro de Documentos",
     "url": "assets/docs/Maestro_de_Documento.xlsx",
     "type": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
-    "date": "2025-10-23",
-    "phase": "Iniciacion,Estrategia,Requirimientos,Planeacion,Diseño,Implementación,Pruebas,Postmortem,IniciacionYEstrategia,RequerimientosYPlaneación"
+    "date": "2025-11-20",
+    "phase": "Iniciacion,Estrategia,Requirimientos,Planeacion,Diseño,Implementación,Pruebas,Postmortem,IniciacionYEstrategia,RequerimientosYPlaneación,DiseñoF2,ImplementaciónYPruebas,PostmortemF2"
   },
   {
     "name": "Script Iniciacion",
@@ -228,7 +228,7 @@
     "url": "assets/docs/Bitacora_Tiempo_Nicolas.docx",
     "type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
     "date": "2025-10-22",
-    "phase": "Iniciacion,Estrategia,Requirimientos,Planeacion,Diseño,Implementacion,Pruebas,Postmortem,IniciacionYEstrategia,RequerimientosYPlaneación"
+    "phase": "Iniciacion,Estrategia,Requirimientos,Planeacion,Diseño,Implementacion,Pruebas,Postmortem,IniciacionYEstrategia,RequerimientosYPlaneación,DiseñoF2,ImplementaciónYPruebas,PostmortemF2"
 
   },
   {
