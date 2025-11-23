@@ -667,5 +667,69 @@
     "type": "application/vnd.openxmlformats-officedocument.presentationml.presentation",
     "date": "2025-11-7",
     "phase": "RequerimientosYPlaneación"
+  },
+  {
+    "name": "Script Diseño Fase 2",
+    "url": "assets/docs/Script_Diseño_Fase2.docx",
+    "type": "application/vnd.openxmlformats-officedocument.presentationml.presentation",
+    "date": "2025-11-7",
+    "phase": "DiseñoF2"
+  },
+  {
+    "name": "Documento Revision y Correccion Diseño Fase 2",
+    "url": "assets/docs/Documento_Revision_Correccion_Diseño_Fase2.docx",
+    "type": "application/vnd.openxmlformats-officedocument.presentationml.presentation",
+    "date": "2025-11-7",
+    "phase": "DiseñoF2"
+  },
+  {
+    "name": "Documento Final Diseño Fase 2",
+    "url": "assets/docs/Documento_Final_Diseño_Fase2.pptx",
+    "type": "application/vnd.openxmlformats-officedocument.presentationml.presentation",
+    "date": "2025-11-7",
+    "phase": "DiseñoF2"
+  },
+  {
+    "name": "Script Implementacion/Pruebas",
+    "url": "assets/docs/Plantilla_Script_Implementacion_Pruebas.docx",
+    "type": "application/vnd.openxmlformats-officedocument.presentationml.presentation",
+    "date": "2025-11-7",
+    "phase": "ImplementaciónYPruebas"
+  },
+  {
+    "name": "Plantilla Plan Pruebas Fase 2",
+    "url": "assets/docs/Plantilla_Plan_Pruebas_Fase2.docx",
+    "type": "application/vnd.openxmlformats-officedocument.presentationml.presentation",
+    "date": "2025-11-7",
+    "phase": "ImplementaciónYPruebas"
+  },
+  {
+    "name": "Plantilla Casos de Prueba Fase 2",
+    "url": "assets/docs/Plantilla_casos_de_Prueba_Fase2.docx",
+    "type": "application/vnd.openxmlformats-officedocument.presentationml.presentation",
+    "date": "2025-11-7",
+    "phase": "ImplementaciónYPruebas"
+  },
+  {
+    "name": "Plantilla Plan Implementacion",
+    "url": "assets/docs/Plan_Implementacion_Fase2.docx",
+    "type": "application/vnd.openxmlformats-officedocument.presentationml.presentation",
+    "date": "2025-11-7",
+    "phase": "ImplementaciónYPruebas"
+  },
+  {
+    "name": "Plantilla Revision y Correccion Implementacion/Pruebas",
+    "url": "assets/docs/Implementacion_Pruebas_Fase2_Revision_Correccion.docx",
+    "type": "application/vnd.openxmlformats-officedocument.presentationml.presentation",
+    "date": "2025-11-7",
+    "phase": "ImplementaciónYPruebas"
+  },
+{
+    "name": "Documento Final Implementacion/Pruebas",
+    "url": "assets/docs/Documento_Final_Implementacion_Pruebas.pptx",
+    "type": "application/vnd.openxmlformats-officedocument.presentationml.presentation",
+    "date": "2025-11-7",
+    "phase": "ImplementaciónYPruebas"
   }
+  
 ]
