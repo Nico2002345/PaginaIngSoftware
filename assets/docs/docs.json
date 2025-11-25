@@ -730,6 +730,33 @@
     "type": "application/vnd.openxmlformats-officedocument.presentationml.presentation",
     "date": "2025-11-7",
     "phase": "ImplementaciónYPruebas"
-  }
-  
+  },
+  {
+    "name": "Presentacion Postmortem Fase 2",
+    "url": "assets/docs/PostMortem_Proyecto_Fase2.pptx",
+    "type": "application/vnd.openxmlformats-officedocument.presentationml.presentation",
+    "date": "2025-11-25",
+    "phase": "PostmortemF2"
+  },
+  {
+    "name": "Script Postmortem Fase 2",
+    "url": "assets/docs/Plantilla_Script_PostmortemF2.docx",
+    "type": "application/vnd.openxmlformats-officedocument.presentationml.presentation",
+    "date": "2025-11-25",
+    "phase": "PostmortemF2"
+  },
+  {
+    "name": "Documento Final Postmortem Fase 2",
+    "url": "assets/docs/Documento_Final_Postmortem_Fase2.pptx",
+    "type": "application/vnd.openxmlformats-officedocument.presentationml.presentation",
+    "date": "2025-11-25",
+    "phase": "PostmortemF2"
+  },
+  {
+    "name": "Documento Revision y Correccion Postmortem Fase 2",
+    "url": "assets/docs/DOCUMENTO_DE_REVISIÓN_Y_CORRECCIÓN_Postmortem_Fase2.pptx",
+    "type": "application/vnd.openxmlformats-officedocument.presentationml.presentation",
+    "date": "2025-11-25",
+    "phase": "PostmortemF2"
+  } 
 ]
