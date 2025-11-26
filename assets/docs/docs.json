@@ -758,5 +758,12 @@
     "type": "application/vnd.openxmlformats-officedocument.presentationml.presentation",
     "date": "2025-11-25",
     "phase": "PostmortemF2"
+  },
+   {
+    "name": "Plantilla SDS Fase 2",
+    "url": "assets/docs/Plantilla_SDS_Fase2.docx",
+    "type": "application/vnd.openxmlformats-officedocument.presentationml.presentation",
+    "date": "2025-11-25",
+    "phase": "DiseñoF2"
   } 
 ]
