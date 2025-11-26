@@ -763,15 +763,15 @@
     "name": "Plantilla SDS Fase 2",
     "url": "assets/docs/Plantilla_SDS_Fase2.docx",
     "type": "application/vnd.openxmlformats-officedocument.presentationml.presentation",
-    "date": "2025-11-25",
+    "date": "2025-11-7",
     "phase": "DiseñoF2"
   },
   {
     "name": "Documento Caso de Pruebas Fotos Funcional",
     "url": "assets/docs/Documento_Caso_de_Uso_Pruebas_Fotos.docx",
     "type": "application/vnd.openxmlformats-officedocument.presentationml.presentation",
-    "date": "2025-11-25",
-    "phase": "DiseñoF2"
+    "date": "2025-11-7",
+    "phase": "ImplementaciónYPruebas"
   } 
    
   
