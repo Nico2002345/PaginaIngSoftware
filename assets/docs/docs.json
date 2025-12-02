@@ -779,6 +779,12 @@
     "type": "application/vnd.openxmlformats-officedocument.presentationml.presentation",
     "date": "2025-11-25",
     "phase": "PostmortemF2"
+  },
+  {
+    "name": "Plantilla Plan Pruebas",
+    "url": "assets/docs/Plantilla_Plan_Pruebas.docx",
+    "type": "application/vnd.openxmlformats-officedocument.presentationml.presentation",
+    "date": "2025-10-05",
+    "phase": "Pruebas"
   }
-  
 ]
